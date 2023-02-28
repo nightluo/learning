@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-28T06:29:54.268Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57" etag="YhaT8jV21bS7HBYvEZoI" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-28T07:19:35.119Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57" etag="35jWa6MHn6-R4IpRPjCC" version="20.8.23" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="559" dy="354" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -50,6 +50,23 @@
         </mxCell>
         <mxCell id="yef3zrIRZs3cayL9gLAq-2" value="source imge size:sw-, sh-&lt;br&gt;target imge size:tw-1920, th-1080&lt;br&gt;&lt;br&gt;x_center = th // 2&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;y_center = tw // 2&lt;br&gt;&lt;br&gt;&lt;div&gt;y_start = (box[0] + box[1]) // 2&lt;/div&gt;&lt;div&gt;x_start = (box[2] + box[3]) // 2&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="295" y="510" width="200" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Yek_4ioApmj7npb4Tyo2" name="第 2 页">
+    <mxGraphModel dx="671" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UZYsINXwNeyzcnmho5Ju-1" value="输入：同一摄像机位的系列帧&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;输出：异常帧&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="190" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UZYsINXwNeyzcnmho5Ju-2" value="运动目标检测 —— 背景差分：&lt;br&gt;输入：图像序列&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;当前帧&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;背景：&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;输出：帧与背景的差异超阈值的区域作为运动区域&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;性能关键：背景模型的建模、获取和更新方法&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;背景：视频图像各个像素点的灰度值符合随机概率分布&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="150" width="310" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="UZYsINXwNeyzcnmho5Ju-3" value="背景建模：&lt;br&gt;在场景中存在运动目标的情况下获取背景" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="370" y="320" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
